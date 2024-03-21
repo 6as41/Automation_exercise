@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="test_scripts.Script_24">
+      <class name="test_scripts.Script_26">
         <methods>
-          <include name="product_page"/>
+          <include name="Verify_Scroll_Up_without_Arrow_btn_and_Scroll_Down_functionality"/>
         </methods>
-      </class> <!-- test_scripts.Script_24 -->
+      </class> <!-- test_scripts.Script_26 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

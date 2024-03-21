@@ -68,7 +68,7 @@ public class Signup_login
 			nametext.sendKeys("ajinkya");
 			Thread.sleep(1000);
 			WebElement emailtext = driver.findElement(email);
-			emailtext.sendKeys("ixvovbjy@gmail.com");
+			emailtext.sendKeys("ixvrefdovbjy@gmail.com");
 			Thread.sleep(1000);
 			WebElement signup_btntext = driver.findElement(signup);
 			signup_btntext.click();
