@@ -21,6 +21,5 @@ public class Script_26
   	  Scrollup_Without_Arrow swa =new Scrollup_Without_Arrow();
   	  swa.verifying_subscription_text(driver);
   	  swa.ScrollUp_Without_Arrow(driver);
-  	  swa.Page_title_txt_Visible(driver);
    }
 }

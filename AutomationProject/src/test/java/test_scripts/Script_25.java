@@ -22,6 +22,5 @@ public class Script_25
   	  sua.verifying_subscription_text(driver);
   	  sua.Scroll_Up_with_Arrow(driver);
   	  sua.Page_title_txt_Visible(driver);
-  	  
    }
   }

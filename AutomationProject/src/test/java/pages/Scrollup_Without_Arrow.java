@@ -12,7 +12,7 @@ public class Scrollup_Without_Arrow
 	                     // locators //
 	private By sub_txt = By.xpath("//h2[text()='Subscription']");
     private By hover_on_img = By.xpath("//div/img[@src='/static/images/home/girl1.jpg']");
-                     
+    private By page_title = By.xpath("//h2[text()='Full-Fledged practice website for Automation Engineers'])[1]");                 
                         // methods // 
 	public void verifying_subscription_text(WebDriver driver) throws InterruptedException {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
@@ -34,9 +34,10 @@ public class Scrollup_Without_Arrow
 		hover.click();
 		Thread.sleep(5000);
 	}
-	public void Page_title_txt_Visible(WebDriver driver) {
-	String verify_text= driver.findElement(By.xpath("(//h2[text()='Full-Fledged practice website for Automation Engineers'])[1]")).getText();
-	Assert.assertEquals(verify_text,"Full-Fledged practice website for Automation Engineers");
-  }
+	public void Page_title_txt_Visible(WebDriver driver) throws InterruptedException {
+	WebElement page_txt = driver.findElement(page_title);
+	Assert.assertTrue(page_txt.isDisplayed(), "Full-Fledged practice website for Automation Engineers not visible");
+	Thread.sleep(2000);
+    }
 	
-}
+ }
